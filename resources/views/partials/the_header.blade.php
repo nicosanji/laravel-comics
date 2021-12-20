@@ -40,12 +40,12 @@ $nav_links = [
             <span>ADDITIONAL DC SITES</span>
         </div>
     </div>
-    <div class="container py-2 d-flex align-items-center">
+    <div class="container py-2 d-flex justify-content-between align-items-center">
         <img src="{{ asset('img/dc-logo.png') }}" alt="dc-logo">
         <ul class="d-flex align-items-center list-inline mb-0">
             @foreach ($nav_links as $value)
-                <li class="list-inline-item px-2">
-                    <a class="text-decoration-none" href="#">{{ $value['text'] }}</a>
+                <li class="list-inline-item px-3">
+                    <a class="text-dark text-decoration-none" href="#">{{ $value['text'] }}</a>
                 </li>
             @endforeach
             <form class="d-flex">
@@ -53,6 +53,10 @@ $nav_links = [
             </form>
         </ul>
     </div>
-    <div class="container-fluid jumbotron">
+    <div class="container-fluid jumbotron ">
+        <div class="container h-100 position-relative">
+            <button type="button" class="btn btn-primary position-absolute top-100 translate-middle-y">CURRENT
+                SERIES</button>
+        </div>
     </div>
 </header>

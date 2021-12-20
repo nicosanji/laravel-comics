@@ -1,5 +1,9 @@
+header {
+  font-family: "Oswald", sans-serif;
+}
+
 header span {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 header .jumbotron {
@@ -7,5 +11,17 @@ header .jumbotron {
   background-position: top;
   background-size: cover;
   height: 50vh;
+}
+
+main {
+  font-family: "Oswald", sans-serif;
+}
+
+main img {
+  overflow: hidden;
+}
+
+main p {
+  font-size: 14px;
 }
 
