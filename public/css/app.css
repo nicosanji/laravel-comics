@@ -25,3 +25,11 @@ main p {
   font-size: 14px;
 }
 
+footer {
+  font-family: "Oswald", sans-serif;
+}
+
+footer .footer-hero {
+  background-image: url("/img/footer-bg.jpg");
+}
+

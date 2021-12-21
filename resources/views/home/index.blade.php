@@ -6,7 +6,7 @@ $shop_list = [
     ],
     [
         'url' => 'img/buy-comics-merchandise.png',
-        'text' => 'MERCHANDISE',
+        'text' => 'DC MERCHANDISE',
     ],
     [
         'url' => 'img/buy-comics-subscriptions.png',
@@ -14,11 +14,11 @@ $shop_list = [
     ],
     [
         'url' => 'img/buy-comics-shop-locator.png',
-        'text' => 'SHOP LOCATOR',
+        'text' => 'COMIC SHOP LOCATOR',
     ],
     [
         'url' => 'img/buy-dc-power-visa.svg',
-        'text' => 'POWER VISA',
+        'text' => 'DC POWER VISA',
     ],
 ];
 @endphp
@@ -32,6 +32,11 @@ $shop_list = [
 
 {{-- Qui inserisco il contenuto per la pagina HOME --}}
 @section('content')
+    {{-- button absolute --}}
+    <div class="container position-relative">
+        <button type="button" class="btn btn-primary position-absolute top-0 translate-middle-y">CURRENT
+            SERIES</button>
+    </div>
     {{-- sezione cards --}}
     <section class="bg-dark text-white py-5">
         <div class="container">
