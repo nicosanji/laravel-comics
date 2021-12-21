@@ -8,7 +8,7 @@
 
     <title>@yield('page_title')</title>
 
-    @include("partials.header_scripts")
+    @include("partials.head_scripts")
 </head>
 
 <body>
