@@ -85,10 +85,10 @@ $footer_sites = [
 @endphp
 
 <footer>
-    {{-- elenco link --}}
+    {{-- elenco link footer --}}
     <div class="footer-hero container-fluid text-secondary">
         <div class="container d-flex flex-columns-2">
-            <div class="col d-flex flex-wrap">
+            <div class="col d-flex flex-wrap py-4">
                 <div class="col-4">
                     <ul class="list-unstyled mb-0">
                         <h4 class="text-white">DC COMICS</h4>
@@ -98,7 +98,7 @@ $footer_sites = [
                             </li>
                         @endforeach
                     </ul>
-                    <ul class="list-unstyled mb-0">
+                    <ul class="list-unstyled mb-0 pt-4">
                         <h4 class="text-white">SHOP</h4>
                         @foreach ($footer_shop as $value)
                             <li>
@@ -128,7 +128,7 @@ $footer_sites = [
                     </ul>
                 </div>
                 <div>
-                    <p>All Site Content TM and © 2020 DC Entertainment, unless otherwise noted here. All rights
+                    <p class="pt-3">All Site Content TM and © 2020 DC Entertainment, unless otherwise noted here. All rights
                         reserved. Cookies Settings</p>
                 </div>
             </div>
@@ -141,14 +141,14 @@ $footer_sites = [
     </div>
     {{-- social --}}
     <div class="container-fluid bg-dark text-white">
-        <div class="container">
+        <div class="container py-4">
             <div class="row justfy-content-between align-items-center">
-                <div class="col-7">
+                <div class="col-6">
                     <button type="button" class="btn btn-outline-primary text-white">
                         SIGN-UP NOW!
                     </button>
                 </div>
-                <div class="col-5">
+                <div class="col-6">
                     <ul class="d-flex align-items-center list-inline mb-0">
                         <h5 class="mb-0">FOLLOW US</h5>
                         <li class="list-inline-item px-3">

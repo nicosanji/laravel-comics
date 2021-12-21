@@ -38,17 +38,17 @@ $shop_list = [
             SERIES</button>
     </div>
     {{-- sezione cards --}}
-    <section class="bg-dark text-white py-5">
+    <section class="bg-dark py-5">
         <div class="container">
             <div class="row">
                 {{-- ciclo sul "database" --}}
                 @foreach ($comics_list as $comic)
-                    <div class="col-2 d-flex flex-column">
+                    <a class="col-2 d-flex flex-column text-decoration-none" href="#">
                         <div class="ratio ratio-1x1 overflow-hidden">
                             <img class="w-auto h-auto" src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
                         </div>
-                        <p class="py-2">{{ strtoupper($comic['series']) }}</p>
-                    </div>
+                        <p class="py-2 text-white">{{ strtoupper($comic['series']) }}</p>
+                    </a>
                 @endforeach
             </div>
             <div class="text-center">
@@ -56,10 +56,10 @@ $shop_list = [
             </div>
         </div>
     </section>
-    {{-- sezione blu --}}
+    {{-- sezione blu shop --}}
     <section class="bg-primary text-white">
         <div class="container">
-            <div class="row justify-content-evenly align-items-center py-4">
+            <div class="row justify-content-evenly align-items-center py-5">
                 {{-- ciclo shop card --}}
                 @foreach ($shop_list as $element)
                     <div class="col-2 d-flex align-items-center">
