@@ -109,7 +109,7 @@ $footer_sites = [
                 </div>
                 <div class="col-4">
                     <ul class="list-unstyled mb-0">
-                        <h4 class="text-white">DC COMICS</h4>
+                        <h4 class="text-white">DC</h4>
                         @foreach ($footer_dc as $value)
                             <li>
                                 <a class="text-secondary text-decoration-none" href="#">{{ $value['text'] }}</a>
@@ -128,8 +128,9 @@ $footer_sites = [
                     </ul>
                 </div>
                 <div>
-                    <p class="pt-3">All Site Content TM and © 2020 DC Entertainment, unless otherwise noted here. All rights
-                        reserved. Cookies Settings</p>
+                    <p class="pt-3">All Site Content TM and © 2020 DC Entertainment, unless otherwise <a
+                            class="text-decoration-none" href="#">noted here</a>. All rights reserved.<br><a
+                            class="text-decoration-none" href="#">Cookies Settings</a></p>
                 </div>
             </div>
             {{-- immagine dc logo absolute --}}
@@ -149,21 +150,21 @@ $footer_sites = [
                     </button>
                 </div>
                 <div class="col-6">
-                    <ul class="d-flex align-items-center list-inline mb-0">
-                        <h5 class="mb-0">FOLLOW US</h5>
-                        <li class="list-inline-item px-3">
+                    <ul class="d-flex justify-content-evenly align-items-center list-inline mb-0">
+                        <h5 class="text-primary mb-0">FOLLOW US</h5>
+                        <li class="list-inline-item">
                             <img src="{{ asset('img/footer-facebook.png') }}" alt="facebook-logo">
                         </li>
-                        <li class="list-inline-item px-3">
+                        <li class="list-inline-item">
                             <img src="{{ asset('img/footer-twitter.png') }}" alt="facebook-logo">
                         </li>
-                        <li class="list-inline-item px-3">
+                        <li class="list-inline-item">
                             <img src="{{ asset('img/footer-youtube.png') }}" alt="facebook-logo">
                         </li>
-                        <li class="list-inline-item px-3">
+                        <li class="list-inline-item">
                             <img src="{{ asset('img/footer-pinterest.png') }}" alt="facebook-logo">
                         </li>
-                        <li class="list-inline-item px-3">
+                        <li class="list-inline-item">
                             <img src="{{ asset('img/footer-periscope.png') }}" alt="facebook-logo">
                         </li>
                     </ul>

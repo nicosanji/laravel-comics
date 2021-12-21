@@ -7,3 +7,29 @@ main {
     font-size: 14px;
   }
 }
+
+.details-top {
+  img {
+    max-height: 50vh;
+  }
+  .advertisement {
+    max-height: 90%;
+    width: 100%;
+  }
+  h2 {
+    color: $blue-text;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+.details-bottom {
+  background-color: lightgray;
+  h4 {
+    color: $blue-text;
+  }
+  p {
+    color: $blue-text;
+  }
+}

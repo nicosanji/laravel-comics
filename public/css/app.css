@@ -25,6 +25,35 @@ main p {
   font-size: 14px;
 }
 
+.details-top img {
+  max-height: 50vh;
+}
+
+.details-top .advertisement {
+  max-height: 90%;
+  width: 100%;
+}
+
+.details-top h2 {
+  color: #124273;
+}
+
+.details-top p {
+  font-size: 1rem;
+}
+
+.details-bottom {
+  background-color: lightgray;
+}
+
+.details-bottom h4 {
+  color: #124273;
+}
+
+.details-bottom p {
+  color: #124273;
+}
+
 footer {
   font-family: "Oswald", sans-serif;
 }

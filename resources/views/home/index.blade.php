@@ -42,8 +42,9 @@ $shop_list = [
         <div class="container">
             <div class="row">
                 {{-- ciclo sul "database" --}}
-                @foreach ($comics_list as $comic)
-                    <a class="col-2 d-flex flex-column text-decoration-none" href="#">
+                @foreach ($comics_list as $id => $comic)
+                    <a class="col-2 d-flex flex-column text-decoration-none" {{-- rotta alla pagina con il parametro id corretto --}}
+                        href="{{ route('home.details', ['id' => $id]) }}">
                         <div class="ratio ratio-1x1 overflow-hidden">
                             <img class="w-auto h-auto" src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
                         </div>
