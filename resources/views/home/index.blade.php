@@ -34,13 +34,14 @@ $shop_list = [
 @section('content')
     {{-- button absolute --}}
     <div class="container position-relative">
-        <button type="button" class="btn btn-primary position-absolute top-0 translate-middle-y">CURRENT
+        <button type="button"
+            class="btn btn-primary btn-lg rounded-0 py-2 px-3 position-absolute top-0 translate-middle-y">CURRENT
             SERIES</button>
     </div>
     {{-- sezione cards --}}
-    <section class="bg-dark py-5">
+    <section class="bg-dark py-4">
         <div class="container">
-            <div class="row">
+            <div class="row pt-5">
                 {{-- ciclo sul "database" --}}
                 @foreach ($comics_list as $id => $comic)
                     <a class="col-2 d-flex flex-column text-decoration-none" {{-- rotta alla pagina con il parametro id corretto --}}
@@ -52,8 +53,8 @@ $shop_list = [
                     </a>
                 @endforeach
             </div>
-            <div class="text-center">
-                <button type="button" class="btn btn-primary">LOAD MORE</button>
+            <div class="text-center py-4">
+                <button type="button" class="btn btn-primary rounded-0 py-1 px-5">LOAD MORE</button>
             </div>
         </div>
     </section>

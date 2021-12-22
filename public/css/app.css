@@ -22,7 +22,7 @@ main img {
 }
 
 main p {
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .details-top img {
@@ -52,6 +52,7 @@ main p {
 
 .details-bottom p {
   color: #124273;
+  font-size: 1rem;
 }
 
 footer {
